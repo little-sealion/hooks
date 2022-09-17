@@ -4,13 +4,13 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [name, setName] = useState('');
-  // useEffect(() => {
-  //   console.log('fire every time the component renders');
-  // });
+  useEffect(() => {
+    console.log('fire every time the component renders');
+  });
 
-  // useEffect(() => {
-  //   console.log('only fire when the component first mounted');
-  // }, []);
+  useEffect(() => {
+    console.log('only fire when the component first mounted');
+  }, []);
 
   useEffect(() => {
     console.log('fire when first mounted and every time when width changes');
